@@ -3,19 +3,4 @@ import { render } from 'react-dom';
 import Counter from './components/Counter';
 import './style.css';
 
-interface AppProps {}
-interface AppState {
-  name: string;
-}
-
-class App extends Component<AppProps, AppState> {
-  render() {
-    return (
-      <div>
-        <Counter name="Yug" />
-      </div>
-    );
-  }
-}
-
-render(<App />, document.getElementById('root'));
+render(<Counter name="Yug" />, document.getElementById('root'));
